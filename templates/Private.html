@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+
+	<!-- Some information to make sure phones and browsers view the page correctly -->
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  	<title>Title</title>
+
+  <!-- IMPORTS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">							<!-- Fonts from Google CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">	<!-- Materialize CSS from jsCDN -->
+  <link rel="stylesheet" type="text/css" href="../static/css/customCSS.css">
+  <!-- <link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->					<!-- Used to overide Materialize CSS if necessary-->
+
+</head>
+
+
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="#ffa726 orange lighten-1" role="navigation">
+    	<div class="nav-wrapper container">
+
+	    	<!-- Main Logo -->
+	      	<a id="logo-container" href="#" class="brand-logo"> <img src=http://brand.fullerton.edu/_resources/images/examples/csuf-seal.png> </a>
+
+	      	<!-- Regular Navbar-->
+			<ul class="right hide-on-med-and-down">
+	        	<li><a href="https://fullerton.edu">link</a></li>
+              <!-- <img src=C:\Users\zz-mdominguez\Documents\SeatsApp\images\logo.png>-->
+            <li><a href="https://fullerton.edu">link</a></li>
+	      	</ul>
+
+	      	<!-- Navbar When in Mobile -->
+	      	<ul id="nav-mobile" class="side-nav">
+            <li><a href="https://fullerton.edu"><img src=C:\Users\zz-mdominguez\Documents\SeatsApp\images\emblem.png ></a></li>
+	      	  <li><a href="https://fullerton.edu/dss">link</a></li>
+            <li><a href="https://my.fullerton.edu">link</a></li>
+
+          <li><a href="http://titanable.fullerton.edu/"></a></li>
+        </ul>
+
+	      	<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    	</div>
+  </nav>
+
+
+
+<!-- <div class = "center-align container">
+
+  <div class="card-panel indigo darken-2 hoverable">
+
+    <div class="center-align"> <h4> Nothing yet</h4> </div>
+
+  </div>
+
+  <p class="flow-text"> Active Exams</p>
+
+	<img class="responsive-img" src="https://pbs.twimg.com/profile_images/673942335068049408/0N1rT3re.png">
+
+
+</div> -->
+
+<div class = "center-align container">
+  <p class="flow-text"> <h4> Private Rooms </h4></p>
+
+<table class = "striped">
+        <thead>
+          <tr>
+              <th data-field="id">Name</th>
+              <th data-field="Room"> Seat #</th>
+              <th data-field="InTime">Time In</th>
+			  <th data-field="OutTime">Time Out</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>109</td>
+            <td>11:00</td>
+			<td>01:30</td>
+          </tr>
+          <tr>
+            <td>Allen</td>
+            <td>110</td>
+            <td>11:00</td>
+			<td>12:15</td>
+          </tr>
+          <tr>
+            <td>Kobe</td>
+            <td>112</td>
+            <td>11:00</td>
+			<td>12:15</td>
+          </tr>
+		  <tr>
+            <td>Jane</td>
+            <td>113</td>
+            <td>11:00</td>
+			<td>01:00</td>
+          </tr>
+          <tr>
+            <td>Tina</td>
+            <td>114</td>
+            <td>10:00</td>
+			<td>12:30</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+</body>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script>
+
+    $(document).ready(init);
+
+
+    function init()
+    {
+      $('.carousel').carousel();
+      $('.tooltipped').tooltip({delay: 50});
+    }
+
+  </script>
+
+</html>
